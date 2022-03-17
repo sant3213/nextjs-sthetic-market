@@ -1,0 +1,23 @@
+.mockupCopyLeft {
+  width: 130%;
+  height: 95%;
+  margin-left: 2%;
+  text-align: right;
+  padding-right: 7%;
+}
+
+.mockupCopyRight {
+    width: 130%;
+    height: 95%;
+    text-align: left;
+  }
+
+@media (min-width: 1180px) {
+  .mockup-copy-left {
+    width: 115%;
+    height: 95%;
+    margin-left: 2%;
+    text-align: right;
+    padding-right: 7%;
+  }
+}

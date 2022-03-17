@@ -1,0 +1,34 @@
+.mockupCopyMain {
+    width: 80%;
+    height: 50%;
+  }
+
+  .listDescription {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .listDescription ul{
+    columns: 1;
+  }
+  
+.portada {
+    text-align: center;
+  }
+
+  @media (min-width: 300px) { 
+    .mockupCopyMain {
+      width: 50%;
+      height: 50%;
+      }
+  }
+
+    .image {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+      width: 30;
+      height: 50;
+    }
+  
