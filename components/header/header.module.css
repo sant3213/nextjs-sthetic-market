@@ -9,6 +9,7 @@
     text-align: center;
     color: #333399;
     margin-bottom: 1%;
+    text-align: center; line-height: 0.9;
   }
 
   .center {
@@ -20,6 +21,10 @@
     height: 100%;
     align-items: center;
     justify-content: center;
+  }
+
+  .importantSpan{
+    color: red;
   }
 
 @media (min-width: 350px) {

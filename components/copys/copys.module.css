@@ -1,34 +1,130 @@
 .mockupCopyMain {
-    width: 80%;
+  width: 80%;
+  height: 50%;
+}
+
+.listDescription {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.listDescription ul {
+  columns: 1;
+}
+
+.portada {
+  text-align: center;
+}
+
+.discount {
+  color: red;
+}
+
+.btnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonPromo {
+  background-color: red;
+  color: white;
+  text-align: center;
+  width: 50%;
+  border-radius: 12px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+.btnPromo {
+  color: white;
+  font-weight: 700;
+  font-size: medium;
+  
+}
+
+.alignList{
+  display: flex;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+.title {
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  color: #333399;
+  font-weight: 800;
+}
+
+.whyCourse {
+  margin: 2%;
+}
+
+
+@media (min-width: 300px) {
+  .mockupCopyMain {
+    width: 50%;
     height: 50%;
   }
+}
 
-  .listDescription {
+.image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+  width: 30;
+  height: 50;
+}
+
+.check {
+    color: #c08070;
+    padding: 0px;
+    margin-right: 3%;
+    vertical-align: middle;
+    margin-top: 6px;
+  }
+
+  .listDescription{
     margin-left: 10%;
     margin-right: 10%;
   }
   
   .listDescription ul{
     columns: 1;
-  }
-  
-.portada {
-    text-align: center;
+    list-style: none;
   }
 
-  @media (min-width: 300px) { 
-    .mockupCopyMain {
-      width: 50%;
-      height: 50%;
-      }
+  .containerList{
+    list-style-position: outside;   
   }
 
-    .image {
-      object-fit: contain;
-      width: 100% !important;
-      position: relative !important;
-      height: unset !important;
-      width: 30;
-      height: 50;
-    }
+  .containerList span {
+    display: inline-block;
+  }
+
+  .ulContainer {
+    padding: 0px;
+  }
   

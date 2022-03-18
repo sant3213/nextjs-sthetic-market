@@ -56,6 +56,11 @@ img {
   height: 50%;
 }
 
+.title{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
 
 @media (min-width: 300px) { 
   .mockupCopyMain {

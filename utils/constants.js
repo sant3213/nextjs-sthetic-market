@@ -2,14 +2,12 @@ export const FIRST_BENEFITS = [
   {
     id: 1,
     value: (
-      <div>
         <span align="justify">
           Imaginate en <strong>15 días</strong> recibiendo el certificado como
           <strong> experto</strong> en técnicas brasileñas y como en pocos días{" "}
           <strong>incrementan exponencialmente </strong> tus clientes, tanto que
           ya tu agenda no da abasto.
         </span>
-      </div>
     ),
   },
   {
