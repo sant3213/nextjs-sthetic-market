@@ -1,9 +1,59 @@
 .appClock {
-    text-align: center;
+    position: relative;
+    margin: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0px 5px 1px 3px;
+}
+
+.container {
+    background-color: #cb292f;
+}
+
+.time {
+    background-color: #dddddd;
+    height: 48px;
+    text-align: center;
+    justify-content: center;
+    margin: 4px 3px 1px 3px;
+    border-radius: 12px;
+    width: 50px;
+    font-weight: 700;
+}
+
+.timeNumber{
+    height: 10px;
+    padding: 1px;
+}
+
+.discountTitle{
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+
+.smallLabel {
+    color:white;
+    text-align: center;
+    justify-content: center;
+    margin: 4px 3px 1px 3px;
+    border-radius: 12px;
+    width: 60px;
+}
+
+.timeLabel{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin: 1px;
+}
+
+.timeDivider {
+    color: white;
+    margin: 2px 2px 15px 2px;
+    font-weight: 800;
 }
 
 .clock {
@@ -13,13 +63,13 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(270deg,#051817,#0e3839);
-    height: 180px;
-    width: 350px;
+    height: 90px;
+    width: 340px;
     color: #06f1f6;
     text-shadow: 1px 1px 7px;
     border-radius: 15px;
     border: 2px solid silver;
-    box-shadow: 0 0 5px 25px;
+    box-shadow: 0 0 5px 6px;
 }
 
 .clock section {

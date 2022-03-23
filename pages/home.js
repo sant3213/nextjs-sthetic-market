@@ -13,6 +13,7 @@ import { Row } from "react-bootstrap";
 import { secondMockup, firstMockup } from "../utils/constants";
 import React, { useState, useEffect } from "react";
 import Clock from "../components/clock/clock";
+import { getCookie, setCookies } from 'cookies-next';
 
 export default function HomePage() {
   const [timerDays, setTimerDays] = useState();
@@ -21,13 +22,24 @@ export default function HomePage() {
   const [timerSeconds, setTimerSeconds] = useState();
   let interval;
   
-  const countDownDate = new Date("March 23,2022 ").getTime();
+  //const countDownDate = new Date("March 23,2022 ").getTime();
   const startTimer =() =>{
-    // const countDownDate = new Date(new Date().getTime()+(5*24*60*60*1000));
-    //const countDownDate = new Date("March 23,2022 ").getTime();
+    
+    const cookie = getCookie('date');
+    let newCountDownDate;
+    if(cookie === undefined){
+      newCountDownDate = new Date(new Date().getTime()+(5*24*60*60*1000));
+      setCookies('date', newCountDownDate);
+    } else {
+      newCountDownDate =  getCookie('date');
+      
+    }
+    
+    const countDownDate = new Date(newCountDownDate).getTime();
     interval = setInterval(()=>{
+      // const countDownDate = newCountDownDate;
       const now = new Date().getTime();
-
+      if(!isNaN(countDownDate)){
       const distance = countDownDate - now;
       
       const days = Math.floor(distance / (24 * 60 * 60 * 1000));
@@ -48,13 +60,18 @@ export default function HomePage() {
         setTimerHours(hours);
         setTimerMinutes(minutes);
         setTimerSeconds(seconds);
-    }});
+    }
+  } else {
+    countDownDate = new Date(new Date().getTime()+(5*24*60*60*1000));
+    setCookies('date', newCountDownDate);
+  }
+  });
   }
 
   useEffect(()=>{
-
+  
     startTimer();
-  })
+  }, [])
   return (
     <div>
       <Head />
@@ -68,14 +85,14 @@ export default function HomePage() {
           timerSeconds={timerSeconds}
         />
       <Row className="container-btn"></Row>
-      <Link href="https://go.hotmart.com/S66618608K?ap=cbdc">
-        {/* <Row className="container-btn">
+      {/* <Link href="https://go.hotmart.com/S66618608K?ap=cbdc">
+        <Row className="container-btn">
           <div className="blob">
             <h4 className="center">Quiero tomar el curso</h4>
           </div>
-        </Row> */}
+        </Row>
         <div>Este descuento finaliza en:</div>
-      </Link>
+      </Link> */}
       <Pleasures />
       <hr className="line"></hr>
       <MockupLeft parentToChild={firstMockup} />
