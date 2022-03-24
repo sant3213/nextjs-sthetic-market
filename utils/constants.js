@@ -14,8 +14,7 @@ export const FIRST_BENEFITS = [
     id: 2,
     value: (
       <span align="justify">
-        Con una
-        <strong> inversión mínima</strong> podrás recuperar tu dinero en tan
+        <strong> Inversión mínima!</strong> recupera tu dinero en tan
         solo una sesión.
       </span>
     ),
@@ -24,20 +23,9 @@ export const FIRST_BENEFITS = [
     id: 3,
     value: (
       <span align="justify">
-        Debido a la
-        <strong> alta demanda</strong> de estas técnicas en el mercado de la
+        <strong> Alta demanda</strong>  en el mercado de la
         estética, podrás mejorar tu <strong>calidad de vida</strong> como
         resultado del <strong>incremento</strong> de tus finanzas.
-      </span>
-    ),
-  },
-  {
-    id: 4,
-    value: (
-      <span align="justify">
-        Con una
-        <strong> inversión mínima</strong> podrás recuperar tu dinero en tan
-        solo una sesión.
       </span>
     ),
   },
@@ -147,15 +135,15 @@ export const IMAGES_DATA = [
   {
     id: 9,
     source:
-      "https://drenaje-linfatico.s3.amazonaws.com/public/assets/no_stopping.jpg",
-    title: "Contraindicaciones",
+      "https://drenaje-linfatico.s3.amazonaws.com/public/assets/waist.jpg",
+    title: "Auto drenaje Brasileño",
   },
   {
     id: 10,
     source:
-      "https://drenaje-linfatico.s3.amazonaws.com/public/assets/waist.jpg",
-    title: "Auto drenaje Brasileño",
-  },
+      "https://drenaje-linfatico.s3.amazonaws.com/public/assets/no_stopping.jpg",
+    title: "Contraindicaciones",
+  }
 ];
 
 export const secondMockup = {

@@ -4,28 +4,30 @@ import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { secondBenefits } from "../../utils/constants";
 import {IMAGES_DATA} from '../../utils/constants';
 import Image from 'next/image'
+import styles from './pleasures.module.css';
+
 export default function Pleasures() {
   
   return (
     <div>
       <h1 className="title">¿ Qué vas Aprender?</h1>
       <Container>
-        <ul className="learn-list">
+        <ul className={styles.learningList}>
           {IMAGES_DATA.map((imageData) => (
             <li key={imageData.id}>
               <Image
-                className="icon-list"
+                className={styles.iconList}
                 alt="drenaje linfático"
                 src={`${imageData.source}`}
-                width={"10"}
-                height={"20"}
+                width={"30"}
+                height={"35"}
               ></Image>
               {imageData.title}
             </li>
           ))}
         </ul>
-        <div className="first-list-container">
-          <ul className="first-list">
+        <div className={styles.learningListContainer}>
+          <ul className={styles.learningList}>
             {secondBenefits.map((list) => (
               <li key={list.id}>
                 <FontAwesomeIcon className="check" icon={faCircleCheck} />

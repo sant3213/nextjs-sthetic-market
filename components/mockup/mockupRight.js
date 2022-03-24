@@ -10,7 +10,7 @@ export default function MockupRight({ parentToChild }) {
       <Container>
         <h3 className="title"> {parentToChild.title}</h3>
         <Row className="copy-list">
-          <Col xs={8}>
+          <Col className="col-8">
             <ul className="mockup-list">
               {parentToChild.copys.map(function (name, index) {
                 return (
@@ -26,14 +26,14 @@ export default function MockupRight({ parentToChild }) {
               })}
             </ul>
           </Col>
-          <Col xs={4}>
+          <Col className="col-4">
             <div>
               <Image
                 className={styles.mockupCopyLeft}
                 src={parentToChild.img}
                 alt="drenaje linfático brasielño"
-                width={"10"}
-                height={"20"}
+                width={"150"}
+                height={"130"}
               ></Image>
             </div>
           </Col>

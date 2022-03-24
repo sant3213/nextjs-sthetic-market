@@ -1,0 +1,11 @@
+.learningList {
+    columns: 2;  
+}
+
+.learningList li {
+    margin-bottom: 10px;
+}
+.iconList {
+    width: 20%;
+    height: 20%;
+  }

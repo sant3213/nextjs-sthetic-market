@@ -38,35 +38,34 @@
   align-items: center;
   justify-content: center;
   transform: scale(1);
-	animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
 }
 
 .btnPromo {
   color: white;
   font-weight: 700;
   font-size: medium;
-  
 }
 
-.alignList{
+.alignList {
   display: flex;
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-	}
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
 
-	70% {
-		transform: scale(1);
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-	}
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
 
-	100% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-	}
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }
 
 .title {
@@ -80,7 +79,6 @@
 .whyCourse {
   margin: 2%;
 }
-
 
 @media (min-width: 300px) {
   .mockupCopyMain {
@@ -98,33 +96,23 @@
   height: 50;
 }
 
-.check {
-    color: #c08070;
-    padding: 0px;
-    margin-right: 3%;
-    vertical-align: middle;
-    margin-top: 6px;
-  }
+.listDescription {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
-  .listDescription{
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  
-  .listDescription ul{
-    columns: 1;
-    list-style: none;
-  }
+.listDescription ul {
+  columns: 1;
+}
 
-  .containerList{
-    list-style-position: outside;   
-  }
+.containerList {
+  list-style-position: outside;
+}
 
-  .containerList span {
-    display: inline-block;
-  }
+.containerList span {
+  display: inline-block;
+}
 
-  .ulContainer {
-    padding: 0px;
-  }
-  
+.ulContainer {
+  padding: 0px;
+}

@@ -40,7 +40,7 @@ export default function COPYS() {
             <li key={listInfo.id} className={styles.containerList}>
               <div className={styles.alignList}>
                 <FontAwesomeIcon
-                  className={styles.check}
+                  className="check"
                   icon={faCircleCheck}
                 />
                 {listInfo.value}

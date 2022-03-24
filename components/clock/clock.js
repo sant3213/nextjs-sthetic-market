@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import styles from "./clock.module.css";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 const Clock = ({ timerDays, timerHours, timerMinutes, timerSeconds }) => {
   return (
     <Fragment>

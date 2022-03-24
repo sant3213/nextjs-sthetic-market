@@ -56,7 +56,7 @@
     font-weight: 800;
 }
 
-.clock {
+/* .clock {
     position: relative;
     margin: auto;
     display: flex;
@@ -78,13 +78,13 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
-}
+} */
 
-.clock section p {
+/* .clock section p {
     font-size: 1rem;
 }
 
 .clock section small {
     color: silver;
     text-shadow: none;
-}
+} */

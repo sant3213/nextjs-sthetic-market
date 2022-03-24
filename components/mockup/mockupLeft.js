@@ -8,15 +8,15 @@ export default function MockupLeft({ parentToChild }) {
   return (
     <div className="copy-one">
       <Container>
-        <h3 className="title"> {parentToChild.title}</h3>
-        <Row className="copy-list">
+        {/* <h3 className="title"> {parentToChild.title}</h3>
+        <Row className={styles.copyList}>
           <Col xs={4}>
             <div>
               <Image
                 className={styles.mockupCopyLeft}
                 src={parentToChild.img}
-                width={"10"}
-                height={"20"}
+                width={"130"}
+                height={"110"}
                 alt="drenaje linfático brasielño"
               ></Image>
             </div>
@@ -33,7 +33,34 @@ export default function MockupLeft({ parentToChild }) {
               })}
             </ul>
           </Col>
-        </Row>
+        </Row> */}
+        <h3 className="title"> {parentToChild.title}</h3>
+        <div className={styles.drenajeImg}>
+          <div >
+            <div>
+              <Image
+                className={styles.mockupCopyLeft}
+                src={parentToChild.img}
+                width={"190"}
+                height={"170"}
+                alt="drenaje linfático brasielño"
+              ></Image>
+            </div>
+          </div>
+          <div >
+            <ul className={styles.listTwoColumn}>
+              {parentToChild.copys.map(function (name, index) {
+                  return (
+                  <li key={index} >
+                    <p align="justify">
+                      <FontAwesomeIcon className="check" icon={faCircleCheck} />
+                      {name}
+                    </p>
+                  </li>)
+              })}
+            </ul>
+          </div>
+        </div>
       </Container>
     </div>
   );

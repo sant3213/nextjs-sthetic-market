@@ -2,14 +2,16 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
 }
 
 * {
   box-sizing: border-box;
+  font-size: 15px; 
+  font-family: Helvetica;
 }
 
 a {
@@ -47,7 +49,7 @@ img {
   margin-right: 10%;
 }
 
-.listDescription ul{
+.listDescription ul {
   columns: 1;
 }
 
@@ -56,15 +58,28 @@ img {
   height: 50%;
 }
 
-.title{
+.title {
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
-@media (min-width: 300px) { 
+.check {
+  color: #c08070;
+  padding: 0px;
+  margin-right: 3%;
+  vertical-align: middle;
+  margin-top: 6px;
+}
+
+li {
+  list-style: none;
+  display: flex;
+}
+
+@media (min-width: 300px) {
   .mockupCopyMain {
     width: 50%;
     height: 50%;
-    }
+  }
 }
